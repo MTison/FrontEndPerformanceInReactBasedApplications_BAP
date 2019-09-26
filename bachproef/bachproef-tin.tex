@@ -1,0 +1,199 @@
+%===============================================================================
+% LaTeX sjabloon voor de bachelorproef toegepaste informatica aan HOGENT
+% Meer info op https://github.com/HoGentTIN/bachproef-latex-sjabloon
+%===============================================================================
+
+\documentclass{bachproef-tin}
+
+% Titelpagina conform aan HOGENT huisstijl
+\usepackage{hogent-thesis-titlepage}
+\usepackage{glossaries}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{courier}
+
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+
+\definecolor{PigPurple}{RGB}{192, 93, 199}
+\lstdefinelanguage{Java}{
+    morekeywords={abstract,boolean,break,byte,case,catch,char,class,
+        const,continue,default,do,double,else,extends,false,final,
+        finally,float,for,goto,if,implements,import,instanceof,int,
+        interface,label,long,native,new,null,package,private,protected,
+        public,short,static,super,switch,synchronized,this,throw,
+        throws,transient,true,try,void,volatile,while,function,render,from
+    },
+    keywords=[2]{export, return},
+    keywordstyle=[2]\color{PigPurple},
+    sensitive,
+    morecomment=[l]//,
+    morecomment=[s]{/*}{*/},
+    morestring=[b]",
+    morestring=[b]',
+}[keywords,comments,strings]
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    language={Java},
+    tabsize=2,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{orange},
+    basicstyle=\ttfamily\scriptsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\renewcommand*{\lstlistingname}{Code fragment}
+
+%%---------- Documenteigenschappen ---------------------------------------------
+
+% De titel van het rapport/bachelorproef
+\title{Front end performantie in React-gebaseerde applicaties}
+
+% Je eigen naam
+\author{Matthias Tison}
+
+% De naam van je promotor (lector van de opleiding)
+\promotor{Leen Vuyge}
+
+% De naam van je co-promotor. Als je promotor ook je opdrachtgever is en je
+% dus ook inhoudelijk begeleidt (en enkel dan!), mag je dit leeg laten.
+\copromotor{Arvid De Meyer}
+
+% Indien je bachelorproef in opdracht van/in samenwerking met een bedrijf of
+% externe organisatie geschreven is, geef je hier de naam. Zoniet laat je dit
+% zoals het is.
+\instelling{Codifly}
+
+% Academiejaar
+\academiejaar{2019-2020}
+
+% Examenperiode
+%  - 1e semester = 1e examenperiode => 1
+%  - 2e semester = 2e examenperiode => 2
+%  - tweede zit  = 3e examenperiode => 3
+\examenperiode{1}
+
+% Genereer de `glossaries`
+\makeglossaries
+
+%===============================================================================
+% Inhoud document
+%===============================================================================
+
+\begin{document}
+
+%---------- Taalselectie -------------------------------------------------------
+% Als je je bachelorproef in het Engels schrijft, haal dan onderstaande regel
+% uit commentaar. Let op: de tekst op de voorkaft blijft in het Nederlands, en
+% dat is ook de bedoeling!
+
+%\selectlanguage{english}
+
+%---------- Titelblad ----------------------------------------------------------
+\inserttitlepage
+
+%---------- Samenvatting, voorwoord --------------------------------------------
+\usechapterimagefalse
+\input{voorwoord}
+\input{samenvatting}
+
+%---------- Inhoudstafel -------------------------------------------------------
+\pagestyle{empty} % Geen hoofding
+\tableofcontents  % Voeg de inhoudstafel toe
+\cleardoublepage  % Zorg dat volgende hoofstuk op een oneven pagina begint
+\pagestyle{fancy} % Zet hoofding opnieuw aan
+
+%---------- Lijst figuren, afkortingen, ... ------------------------------------
+
+% Indien gewenst kan je hier een lijst van figuren/tabellen opgeven. Geef in
+% dat geval je figuren/tabellen altijd een korte beschrijving:
+%
+%  \caption[korte beschrijving]{uitgebreide beschrijving}
+%
+% De korte beschrijving wordt gebruikt voor deze lijst, de uitgebreide staat bij
+% de figuur of tabel zelf.
+
+\listoffigures
+\lstlistoflistings
+%\listoftables
+
+% Definities van de termen in de `glossary`
+\newglossaryentry{kmo}{name=KMO, description={Kleine of Middelgrote Onderneming}}
+\newglossaryentry{html}{name=HTML, description={HyperText Markup Language}}
+\newglossaryentry{css}{name=CSS, description={Cascading Style Sheet}}
+\newglossaryentry{ajax}{name=AJAX, description={Asynchronous JavaScript And HTML}}
+\newglossaryentry{js}{name=JS, description={javaScript}}
+\newglossaryentry{dom}{name=DOM, description={Document Object Model}}
+\newglossaryentry{seo}{name=SEO, description={Search Engine Optimization}}
+\newglossaryentry{ux}{name=UX, description={User eXperience}}
+\newglossaryentry{ui}{name=UI, description={User Interface}}
+\newglossaryentry{ecma}{name=ECMA, description={European Computer Manufacturers Association}}
+\newglossaryentry{mvc}{name=MVC, description={Model View Controller}}
+\newglossaryentry{jsx}{name=JSX, description={JavaScript eXtension}}
+\newglossaryentry{api}{name=API, description={Application Programming Interface}}
+\newglossaryentry{www}{name=WWW, description={World Wide Web}}
+\newglossaryentry{fps}{name=fps, description={Frames per second}}
+\newglossaryentry{cpu}{name=cpu, description={Central processing unit}}
+
+% Print alle termen in de `glossary`
+\printglossaries
+
+% Als je een lijst van afkortingen of termen wil toevoegen, dan hoort die
+% hier thuis. Gebruik bijvoorbeeld de ``glossaries'' package.
+% https://www.overleaf.com/learn/latex/Glossaries
+
+%---------- Kern ---------------------------------------------------------------
+
+% De eerste hoofdstukken van een bachelorproef zijn meestal een inleiding op
+% het onderwerp, literatuurstudie en verantwoording methodologie.
+% Aarzel niet om een meer beschrijvende titel aan deze hoofstukken te geven of
+% om bijvoorbeeld de inleiding en/of stand van zaken over meerdere hoofdstukken
+% te verspreiden!
+
+\input{inleiding}
+\input{react}
+\input{theoretischePerformantie}
+\input{praktischePerformantie}
+\input{conclusie}
+
+%%=============================================================================
+%% Bijlagen
+%%=============================================================================
+
+\appendix
+\renewcommand{\chaptername}{Appendix}
+
+%%---------- Onderzoeksvoorstel -----------------------------------------------
+
+\chapter{Onderzoeksvoorstel}
+
+Het onderwerp van deze bachelorproef is gebaseerd op een onderzoeksvoorstel dat vooraf werd beoordeeld door de promotor. Dat voorstel is opgenomen in deze bijlage.
+
+% Verwijzing naar het bestand met de inhoud van het onderzoeksvoorstel
+\input{../voorstel/voorstel-inhoud}
+
+%%---------- Referentielijst --------------------------------------------------
+
+\printbibliography[heading=bibintoc]
+
+\end{document}

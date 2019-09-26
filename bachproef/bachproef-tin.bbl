@@ -1,0 +1,321 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{Aston2015}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=3364d0ca9f7612dd4b2e686e410df6ec}{%
+           family={Aston},
+           familyi={A\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3364d0ca9f7612dd4b2e686e410df6ec}
+      \strng{fullhash}{3364d0ca9f7612dd4b2e686e410df6ec}
+      \strng{bibnamehash}{3364d0ca9f7612dd4b2e686e410df6ec}
+      \strng{authorbibnamehash}{3364d0ca9f7612dd4b2e686e410df6ec}
+      \strng{authornamehash}{3364d0ca9f7612dd4b2e686e410df6ec}
+      \strng{authorfullhash}{3364d0ca9f7612dd4b2e686e410df6ec}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medium}
+      \field{title}{A brief history of javaScript}
+      \field{year}{2015}
+    \endentry
+    \entry{Carette2011}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=77338c11c503d48aa6f0abb7bd19e7fe}{%
+           family={Carette},
+           familyi={C\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77338c11c503d48aa6f0abb7bd19e7fe}
+      \strng{fullhash}{77338c11c503d48aa6f0abb7bd19e7fe}
+      \strng{bibnamehash}{77338c11c503d48aa6f0abb7bd19e7fe}
+      \strng{authorbibnamehash}{77338c11c503d48aa6f0abb7bd19e7fe}
+      \strng{authornamehash}{77338c11c503d48aa6f0abb7bd19e7fe}
+      \strng{authorfullhash}{77338c11c503d48aa6f0abb7bd19e7fe}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SITEOPTIMO}
+      \field{title}{Onderzoek: een snelle website = meer bezoekers}
+      \field{year}{2011}
+    \endentry
+    \entry{DeCock2016}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2b9b555a8ceaed279c32e04c9e8ec4f4}{%
+           family={De\bibnamedelima Cock},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Steven.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2b9b555a8ceaed279c32e04c9e8ec4f4}
+      \strng{fullhash}{2b9b555a8ceaed279c32e04c9e8ec4f4}
+      \strng{bibnamehash}{2b9b555a8ceaed279c32e04c9e8ec4f4}
+      \strng{authorbibnamehash}{2b9b555a8ceaed279c32e04c9e8ec4f4}
+      \strng{authornamehash}{2b9b555a8ceaed279c32e04c9e8ec4f4}
+      \strng{authorfullhash}{2b9b555a8ceaed279c32e04c9e8ec4f4}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{React Native Moderne webtechnologieën in native mobiele applicaties.}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://catalogus.hogent.be/catalog/hog01:000700301
+      \endverb
+      \verb{url}
+      \verb https://catalogus.hogent.be/catalog/hog01:000700301
+      \endverb
+    \endentry
+    \entry{Everts2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=89cb5c7a473cb6763eed8d0e03409f0b}{%
+           family={Everts},
+           familyi={E\bibinitperiod},
+           given={Tammy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{89cb5c7a473cb6763eed8d0e03409f0b}
+      \strng{fullhash}{89cb5c7a473cb6763eed8d0e03409f0b}
+      \strng{bibnamehash}{89cb5c7a473cb6763eed8d0e03409f0b}
+      \strng{authorbibnamehash}{89cb5c7a473cb6763eed8d0e03409f0b}
+      \strng{authornamehash}{89cb5c7a473cb6763eed8d0e03409f0b}
+      \strng{authorfullhash}{89cb5c7a473cb6763eed8d0e03409f0b}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Akamai Developer}
+      \field{title}{Mobile Load Time and User Abandonment}
+      \field{year}{2016}
+    \endentry
+    \entry{Martin2008}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=6f41df64eb0dc4855be70172368604c2}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{fullhash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{bibnamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorbibnamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authornamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorfullhash}{6f41df64eb0dc4855be70172368604c2}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Clean Code: A Handbook of Agile Software Craftsmanship}
+      \field{year}{2008}
+    \endentry
+    \entry{Mazaika2017}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=080474538b9d27354e4c74cc6d40f4fa}{%
+           family={Mazaika},
+           familyi={M\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{080474538b9d27354e4c74cc6d40f4fa}
+      \strng{fullhash}{080474538b9d27354e4c74cc6d40f4fa}
+      \strng{bibnamehash}{080474538b9d27354e4c74cc6d40f4fa}
+      \strng{authorbibnamehash}{080474538b9d27354e4c74cc6d40f4fa}
+      \strng{authornamehash}{080474538b9d27354e4c74cc6d40f4fa}
+      \strng{authorfullhash}{080474538b9d27354e4c74cc6d40f4fa}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Forbes}
+      \field{title}{Will the demand of developers continue to increase?}
+      \field{year}{2017}
+    \endentry
+    \entry{McGee2010}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ee037915959abdb11fdc5784a7f50284}{%
+           family={McGee},
+           familyi={M\bibinitperiod},
+           given={Mat},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ee037915959abdb11fdc5784a7f50284}
+      \strng{fullhash}{ee037915959abdb11fdc5784a7f50284}
+      \strng{bibnamehash}{ee037915959abdb11fdc5784a7f50284}
+      \strng{authorbibnamehash}{ee037915959abdb11fdc5784a7f50284}
+      \strng{authornamehash}{ee037915959abdb11fdc5784a7f50284}
+      \strng{authorfullhash}{ee037915959abdb11fdc5784a7f50284}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Search Engine Land}
+      \field{title}{It's Official: Google Now Counts Site Speed As A Ranking Factor}
+      \field{year}{2010}
+    \endentry
+    \entry{Palmer2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=0ef5ef8e908b6a97f6cb6cbe763a7f1c}{%
+           family={Palmer},
+           familyi={P\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0ef5ef8e908b6a97f6cb6cbe763a7f1c}
+      \strng{fullhash}{0ef5ef8e908b6a97f6cb6cbe763a7f1c}
+      \strng{bibnamehash}{0ef5ef8e908b6a97f6cb6cbe763a7f1c}
+      \strng{authorbibnamehash}{0ef5ef8e908b6a97f6cb6cbe763a7f1c}
+      \strng{authornamehash}{0ef5ef8e908b6a97f6cb6cbe763a7f1c}
+      \strng{authorfullhash}{0ef5ef8e908b6a97f6cb6cbe763a7f1c}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Optimizely blog}
+      \field{title}{How Does Page Load Time Impact Engagement?}
+      \field{year}{2016}
+    \endentry
+    \entry{Relic2016}{manual}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=48898bf615fc2a2454e178e5ad5e4eec}{%
+           family={Relic},
+           familyi={R\bibinitperiod},
+           given={New},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {New Relic}%
+      }
+      \strng{namehash}{48898bf615fc2a2454e178e5ad5e4eec}
+      \strng{fullhash}{48898bf615fc2a2454e178e5ad5e4eec}
+      \strng{bibnamehash}{48898bf615fc2a2454e178e5ad5e4eec}
+      \strng{authorbibnamehash}{48898bf615fc2a2454e178e5ad5e4eec}
+      \strng{authornamehash}{48898bf615fc2a2454e178e5ad5e4eec}
+      \strng{authorfullhash}{48898bf615fc2a2454e178e5ad5e4eec}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Page load timing process}
+    \endentry
+    \entry{Meder2017}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d425646b281ab97a88d6c24b27b7b314}{%
+           family={Sam\bibnamedelima Meder},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Jeff\bibnamedelima Chang},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0,
+           suffix={Vadim\bibnamedelima Antonov},
+           suffixi={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{d425646b281ab97a88d6c24b27b7b314}
+      \strng{fullhash}{d425646b281ab97a88d6c24b27b7b314}
+      \strng{bibnamehash}{d425646b281ab97a88d6c24b27b7b314}
+      \strng{authorbibnamehash}{d425646b281ab97a88d6c24b27b7b314}
+      \strng{authornamehash}{d425646b281ab97a88d6c24b27b7b314}
+      \strng{authorfullhash}{d425646b281ab97a88d6c24b27b7b314}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medium}
+      \field{title}{Driving user growth with performance improvements}
+      \field{year}{2017}
+    \endentry
+    \entry{Taub2017}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=946bbbf57856e0751de14240ac7efbfa}{%
+           family={Taub},
+           familyi={T\bibinitperiod},
+           given={Craig},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{946bbbf57856e0751de14240ac7efbfa}
+      \strng{fullhash}{946bbbf57856e0751de14240ac7efbfa}
+      \strng{bibnamehash}{946bbbf57856e0751de14240ac7efbfa}
+      \strng{authorbibnamehash}{946bbbf57856e0751de14240ac7efbfa}
+      \strng{authornamehash}{946bbbf57856e0751de14240ac7efbfa}
+      \strng{authorfullhash}{946bbbf57856e0751de14240ac7efbfa}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medium}
+      \field{title}{Key front-end performance metrics and how to capture them}
+      \field{year}{2017}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

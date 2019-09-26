@@ -1,0 +1,480 @@
+\ifglsentryexists{kmo}{}%
+{%
+\gls@defglossaryentry{kmo}%
+{%
+name={KMO},%
+sort={KMO},%
+type={main},%
+first={KMO},%
+firstplural={KMOs},%
+text={KMO},%
+plural={KMOs},%
+description={Kleine of Middelgrote Onderneming},%
+descriptionplural={Kleine of Middelgrote Onderneming},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{html}{}%
+{%
+\gls@defglossaryentry{html}%
+{%
+name={HTML},%
+sort={HTML},%
+type={main},%
+first={HTML},%
+firstplural={HTMLs},%
+text={HTML},%
+plural={HTMLs},%
+description={HyperText Markup Language},%
+descriptionplural={HyperText Markup Language},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{css}{}%
+{%
+\gls@defglossaryentry{css}%
+{%
+name={CSS},%
+sort={CSS},%
+type={main},%
+first={CSS},%
+firstplural={CSSs},%
+text={CSS},%
+plural={CSSs},%
+description={Cascading Style Sheet},%
+descriptionplural={Cascading Style Sheet},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ajax}{}%
+{%
+\gls@defglossaryentry{ajax}%
+{%
+name={AJAX},%
+sort={AJAX},%
+type={main},%
+first={AJAX},%
+firstplural={AJAXs},%
+text={AJAX},%
+plural={AJAXs},%
+description={Asynchronous JavaScript And HTML},%
+descriptionplural={Asynchronous JavaScript And HTML},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{js}{}%
+{%
+\gls@defglossaryentry{js}%
+{%
+name={JS},%
+sort={JS},%
+type={main},%
+first={JS},%
+firstplural={JSs},%
+text={JS},%
+plural={JSs},%
+description={javaScript},%
+descriptionplural={javaScript},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dom}{}%
+{%
+\gls@defglossaryentry{dom}%
+{%
+name={DOM},%
+sort={DOM},%
+type={main},%
+first={DOM},%
+firstplural={DOMs},%
+text={DOM},%
+plural={DOMs},%
+description={Document Object Model},%
+descriptionplural={Document Object Model},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{seo}{}%
+{%
+\gls@defglossaryentry{seo}%
+{%
+name={SEO},%
+sort={SEO},%
+type={main},%
+first={SEO},%
+firstplural={SEOs},%
+text={SEO},%
+plural={SEOs},%
+description={Search Engine Optimization},%
+descriptionplural={Search Engine Optimization},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ux}{}%
+{%
+\gls@defglossaryentry{ux}%
+{%
+name={UX},%
+sort={UX},%
+type={main},%
+first={UX},%
+firstplural={UXs},%
+text={UX},%
+plural={UXs},%
+description={User eXperience},%
+descriptionplural={User eXperience},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ui}{}%
+{%
+\gls@defglossaryentry{ui}%
+{%
+name={UI},%
+sort={UI},%
+type={main},%
+first={UI},%
+firstplural={UIs},%
+text={UI},%
+plural={UIs},%
+description={User Interface},%
+descriptionplural={User Interface},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ecma}{}%
+{%
+\gls@defglossaryentry{ecma}%
+{%
+name={ECMA},%
+sort={ECMA},%
+type={main},%
+first={ECMA},%
+firstplural={ECMAs},%
+text={ECMA},%
+plural={ECMAs},%
+description={European Computer Manufacturers Association},%
+descriptionplural={European Computer Manufacturers Association},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mvc}{}%
+{%
+\gls@defglossaryentry{mvc}%
+{%
+name={MVC},%
+sort={MVC},%
+type={main},%
+first={MVC},%
+firstplural={MVCs},%
+text={MVC},%
+plural={MVCs},%
+description={Model View Controller},%
+descriptionplural={Model View Controller},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{jsx}{}%
+{%
+\gls@defglossaryentry{jsx}%
+{%
+name={JSX},%
+sort={JSX},%
+type={main},%
+first={JSX},%
+firstplural={JSXs},%
+text={JSX},%
+plural={JSXs},%
+description={JavaScript eXtension},%
+descriptionplural={JavaScript eXtension},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{api}{}%
+{%
+\gls@defglossaryentry{api}%
+{%
+name={API},%
+sort={API},%
+type={main},%
+first={API},%
+firstplural={APIs},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interface},%
+descriptionplural={Application Programming Interface},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{www}{}%
+{%
+\gls@defglossaryentry{www}%
+{%
+name={WWW},%
+sort={WWW},%
+type={main},%
+first={WWW},%
+firstplural={WWWs},%
+text={WWW},%
+plural={WWWs},%
+description={World Wide Web},%
+descriptionplural={World Wide Web},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fps}{}%
+{%
+\gls@defglossaryentry{fps}%
+{%
+name={fps},%
+sort={fps},%
+type={main},%
+first={fps},%
+firstplural={fpss},%
+text={fps},%
+plural={fpss},%
+description={Frames per second},%
+descriptionplural={Frames per second},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cpu}{}%
+{%
+\gls@defglossaryentry{cpu}%
+{%
+name={fps},%
+sort={fps},%
+type={main},%
+first={fps},%
+firstplural={fpss},%
+text={fps},%
+plural={fpss},%
+description={Central processing unit},%
+descriptionplural={Central processing unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

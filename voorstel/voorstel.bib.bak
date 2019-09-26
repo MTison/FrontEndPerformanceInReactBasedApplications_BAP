@@ -1,0 +1,10 @@
+% Encoding: UTF-8
+
+@Electronic{DeCock2016,
+  author = {De Cock, Steven.},
+  title  = {React Native Moderne webtechnologieën in native mobiele applicaties.},
+  year   = {2016},
+  url    = {https://catalogus.hogent.be/catalog/hog01:000700301},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}

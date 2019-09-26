@@ -1,0 +1,111 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {dutch}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Inleiding}{17}{chapter.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Probleemstelling}{17}{section.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Onderzoeksvraag}{17}{section.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Javascript}{18}{section.1.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}JavaScript-framework}{18}{subsection.1.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.2}Javascript library}{19}{subsection.1.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Frontend}{19}{section.1.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Perfomantie}{20}{section.1.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Opzet van deze bachelorproef}{20}{section.1.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}React}{23}{chapter.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}JSX}{24}{section.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Componenten}{25}{section.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Klasse componenten}{25}{subsection.2.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Functionele componenten}{26}{subsection.2.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Componenten exporteren}{27}{subsection.2.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Fragments}{27}{section.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Props}{28}{section.2.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Prop types}{28}{subsection.2.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Default props}{29}{subsection.2.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}State}{29}{section.2.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Lifecycle methoden}{31}{section.2.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Framework concepten}{32}{section.2.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7.1}Destructuring}{32}{subsection.2.7.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7.2}Spread operator}{32}{subsection.2.7.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Theoretische performantie}{35}{chapter.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Waarom performatie?}{35}{section.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Verkoopcijfers}{35}{subsection.3.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}SEO}{36}{subsection.3.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Metingen zijn belangrijk}{37}{section.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}De grootste factor}{37}{subsection.3.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Metrieken}{37}{subsection.3.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{FCP (First Contentful Paint)}{37}{section*.12}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{FMP (First Meaningful Paint)}{37}{section*.13}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Interactie}{38}{section*.14}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Laadproces}{38}{section*.16}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.3}Tools}{39}{subsection.3.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Praktische performantie}{41}{chapter.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Native}{41}{section.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Gebruiken van de Fragment tag}{42}{subsection.4.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Extenden van React.PureComponent}{42}{subsection.4.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}Wikkelen in React.Memo}{43}{subsection.4.1.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.4}React lazy}{43}{subsection.4.1.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Suspense}{43}{section*.20}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Framework}{44}{section.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Propagatie}{44}{subsection.4.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Function calls in de render functie}{44}{subsection.4.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Conclusie}{47}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{49}{appendix.A}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Introductie}{49}{section.A.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}State-of-the-art}{50}{section.A.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Methodologie}{50}{section.A.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{50}{section.A.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{51}{section.A.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografie}{53}{appendix*.21}% 
+\contentsfinish 

@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'conference_poster.blg'
+[34] biber-darwin:315> INFO - === Wed Sep  4, 2019, 01:31:47
+[185] Utils.pm:209> ERROR - Cannot find control file 'conference_poster.bcf'! - Did latex run successfully on your .tex file before you ran biber?
+[185] Biber.pm:114> INFO - ERRORS: 1

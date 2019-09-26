@@ -1,0 +1,102 @@
+%==============================================================================
+% Bachelor proef voorstel
+%==============================================================================
+% Gebaseerd op LaTeX-sjabloon ‘Stylish Article’ (zie voorstel.cls)
+% Auteur: Matthias Tison
+
+\documentclass[fleqn,10pt]{voorstel}
+
+%------------------------------------------------------------------------------
+% Metadata over het artikel
+%------------------------------------------------------------------------------
+
+\JournalInfo{HoGent Bedrijf en Organisatie} % Journal information
+\Archive{Bacherlorproef 2018 - 2019}
+
+%---------- Titel & auteur ----------------------------------------------------
+
+\PaperTitle{Front end performance in React based applications}
+\PaperType{Onderzoeksvoorstel Bachelorproef} % Type document
+
+\Authors{Matthias Tison\textsuperscript{1}} % Authors
+\affiliation{\textbf{Contact:}
+  \textsuperscript{1} \href{mailto:matthias.tison.w0715@student.hogent.be}{matthias.tison.w0715@student.hogent.be};
+  \textsuperscript{2} \href{mailto:Arvid@Codifly.be}{Arvid@Codifly.be}}
+
+%---------- Abstract ----------------------------------------------------------
+
+\Abstract{ Goede performantie is een basis onderdeel voor stabiele en gegronde web- en smartphone applicaties. Net daarom is het belangrijk om hier grondig onderzoek naar te doen. De studie dat zal worden uitgevoerd bestaat uit het testen van performantie, waar deze van af hangt en hoe deze te verbeteren in React gebaseerde web- en native applicaties. Dit binnen React zelf en op verscheidene manieren. Voor Codifly, een bedrijf dat zich specialiseert in complexe React web- en native applicaties, is dit soort onderzoek van groot belang om consistent het beste product te kunnen afleveren.
+    
+Uit dit onderzoek wordt verwacht dat de juiste regels en methoden worden gehanteerd om de best mogelijke performantie te behalen in eender welke situatie. De conclusie toont aan dat de  gebruikte methoden en regels in het onderzoek wel degelijk de performantie aanzienlijk verbeteren. Deze studie kan als een reflectie punt dienen voor de toekomst. De IT-wereld groeit aan een schroeiend tempo en dergelijk onderzoek zal in de toekomst zeker opnieuw onderzocht moeten worden.
+In dit document wordt het onderzoek voorstel, vóór verdere uitwerking, opengelegd voor feedback. }
+
+%---------- Onderzoeksdomein, sleutelwoorden en co-promotor --------------------------------
+
+\newcommand{\keywordname}{Sleutelwoorden} % Defines the keywords heading name
+\Keywords{Webapplicatieontwikkeling, React. Performantie --- React enhancement } % Keywords
+\newcommand{\copromotorname}{Co-promotor} 
+\CoPromotor{Arvid de Meyer\textsuperscript{2} (Codifly)}
+
+%---------- Bibliografie --------------------------------
+
+\usepackage[backend=biber,style=apa]{biblatex}
+\DeclareLanguageMapping{dutch}{dutch-apa}
+\addbibresource{voorstel.bib}
+
+%---------- Titel, inhoud -----------------------------------------------------
+\begin{document}
+
+%\flushbottom % Makes all text pages the same height
+\maketitle % Print the title and abstract box
+\tableofcontents % Print the contents section
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%------------------------------------------------------------------------------
+% Hoofdtekst
+%------------------------------------------------------------------------------
+
+%---------- Inleiding ---------------------------------------------------------
+
+\section{Introductie} % The \section*{} command stops section numbering
+\label{sec:introductie}
+
+Performantie is voor een bedrijf dat zich specialiseert in web- en native applicaties een absoluut werkpunt bij elk project dat ze aangaan. Dit wordt nog groter wanneer het gaat over complexe applicaties. Codifly is een start-up en specialiseert zich net op dit gebied. Het heeft er alle baad bij een grondig onderzoek naar performantie te doen binnen het framework waar ze hun applicaties op baseren, dit zijnde React.
+
+Voor een bedrijf als Codifly is het belangrijk om consistent sterke, nauwkeurige, dynamische en vooral performante producten aan hun klanten af te kunnen leveren. Om dit niveau van applicaties te kunnen garanderen is het belangrijk om grondig onderzoek te doen.
+Een specifiek, maar toch breed onderzoek, waar we ons afvragen: Hoe meten we de performantie binnen het framework? Welke effecten hebben diverse performantie verbetering methoden? Kunnen meerdere methoden gecombineerd worden? Hoe herwerken we onze React codebase hiernaar? Zijn er bepaalde 'regels' te hanteren? Zoja, welke regels moeten gehanteerd worden? Bestaan er specifieke technologieën? ...
+
+
+%---------- Stand van zaken ---------------------------------------------------
+
+\section{Literatuuronderzoek}
+
+De performantie binnen React gebaseerde applicaties is goed ontvangen door de meeste developers toen het bijna 3 jaar geleden op de voorgrond kwam. Het is nog steeds een veel gebruikt framework om sterke en complexe applicaties te maken, zowel web als native. Aangezien React een steeds verder uitbouwend framework is, zijn onderzoeken naar performantie binnen React meer dan een must. 
+
+Een 3 jaar terug deed ~\textcite{DeCock2016} aan de HoGent een soortgelijke studie, daar noemde hij React een moderne webtechnologie. In het betreffende onderzoek kwam hij tot de conclusie dat het een verfrissend concept is, maar nog niet helemaal op punt staat voor fulltime developers. Nu, na de goede opkomst van React over de voorbije jaren, wordt in deze studie nieuw onderzoek gedaan en analyseert het de vorderingen van het framework.
+
+Er werden al reeds performantie onderzoeken uitgevoerd in React, maar het zijn telkens vergelijkende studies. Deze proberen aan te tonen waarom React, of het andere onderzochte framework, beter zou zijn in bepaalde situaties. Een echt onderzoek naar hoe zwakke performantie aan te pakken, of simpel weg te verbeteren, binnen React zelf wordt niet gedaan. Hierin onderscheid het onderzoek zich van de rest. De studie neemt het probleem concreet aan binnen React.
+
+\section{Methodologie}
+
+Het onderzoek dat wordt uitgevoerd ligt in de loop met de projecten die worden aangegaan binnen de stage. Stage vindt plaats in het hierboven vernoemde stagebedrijf Codifly. De verschillende experimenten die worden uitgevoerd zijn gebaseerd op eigen test applicaties en projecten waar aan bijgedragen wordt binnen het bedrijf. Door observaties, studies en experimenten te doen naar verschillende aspecten binnen React performantie kunnen er antwoorden geformuleerd worden op aangehaalde vragen.
+
+Om de performantie te meten bestaan er tools binnen React zelf, zoals 'react-benchmark' die aangewezen werd door de co-promotor. Er is ook een performance tool ingebouwd in React zelf. Simulaties voor kleine testen worden uitgevoerd op zelf ontwikkelde test applicatie. 
+
+\section{Verwachte resultaten}
+
+Een optimalisatie van de codebase die zorgt voor een verbetering van de performantie. Waarbij het hanteren van de methoden een positieve invloed hebben op het optimaliseren van laadtijden, minimaliseren van bundle sizes, code splitting, ...
+
+De resultaten zorgen voor een betere aanpak en sterke basis voor consistente performantie in toekomstige projecten.
+
+\section{Verwachte conclusies}
+
+React is een volwaardig framework dat een goed gebalanceerde performantie biedt voor het bouwen van stabiele en complexe web- en native applicaties. Een framework waar performantie kan verbeterd worden met de juiste hanteringen.
+
+%------------------------------------------------------------------------------
+% Referentielijst
+%------------------------------------------------------------------------------
+
+\phantomsection
+\printbibliography[heading=bibintoc]
+
+\end{document}
