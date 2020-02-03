@@ -1,0 +1,188 @@
+%%=============================================================================
+%% Inleiding
+%%=============================================================================
+
+\chapter{\IfLanguageName{dutch}{React performantie}{React performance}}
+\label{ch:reactPerformantie}
+
+\section{\IfLanguageName{dutch}{Metingen zijn belangrijk}{Measurements are important}}
+\label{sec:importantMetrics}
+
+Metingen zijn de basis waarop optimalisaties worden uitgevoerd, dit is in het geval van performantie niet anders. Weten waar werkpunten liggen en op basis daarvan een plan van aanpak opstellen zorgt voor doelgerichte optimalisatie. Arbitrair verandering aanbrengen zonder een duidelijke kijk te hebben op wat noodzakelijk is stelt zichzelf in vraag.
+
+\subsection{\IfLanguageName{dutch}{De grootste factor}{The biggest factor}}
+\label{sec:biggestFactor}
+
+In de sectie~\ref{sec:whyPerformance} op pagina~\pageref{sec:whyPerformance} werd er al nadruk gelegd op de impact die een slechte performantie kan achterlaten voor een bedrijf, maar wat de gebruiker vindt geeft het uiteindelijke verdict. Waar het om draait voor de hedendaagse gebruiker van het \gls{www} is snelheid. Gebruikers willen zoveel mogelijk informatie op hun beeld krijgen op een snelle en efficiënte manier. \\
+In het artikel van~\textcite{Everts2016} werden conclusies getrokken uit Google Analytics en data van derde partijen die vrijwillig bereid waren hun specifieke data te delen. De conclusies waren unaniem, te lange laadtijd zorgt voor ontevredenheid bij de gebruiker. Trage sites (19 seconden laadtijd) hebben zeer korte gebruikerssessies en vervolgens ook een hoger debouncepercentage, waarbij snelle sites (5 seconden laadtijd) 70 procent langere gebruikerssessies en 35 procent minder debouncepercentage ondervinden.
+
+\subsection{\IfLanguageName{dutch}{Metrieken}{Metrics}}
+\label{sec:metrics}
+
+Wat zij de metrieken waarmee rekening gehouden worden in welzijn van de gebruiker? Dit kan gaan van hoe snel de eerste pixels op het scherm verschijnen tot de reactietijd van een interactie die de gebruiker uitvoert.
+
+\subsubsection{\IfLanguageName{dutch}{FCP (First Contentful Paint)}{FCP (First Contentful Paint)}}
+\label{sec:fcp}
+
+De tijd totdat een gebruiker iets visueel op het scherm te zien krijgt wordt is the frist contentful paint. Het is een maatstaf om een idee te geven wanneer de gebruiker voor het eerst inhoud zal te zien krijgen die hij of zij kan consumeren. 
+
+\subsubsection{\IfLanguageName{dutch}{FMP (First Meaningful Paint)}{FCP (First Meaningful Paint)}}
+\label{sec:fmp}
+
+In aanvulling op een first contentful paint wordt ook rekening gehouden met de tijd tot het eerste deel van de website waar een gebruiker iets aan heeft, deze belangrijke delen van een website worden hero elementen genoemd. In tegenstelling tot first contentful, wat nog maar een enkel woord kan zijn dat op het scherm verschijnt, is the first meaningful veel verfijnder. Wanneer een gebruiker het belangrijkste deel van een website eerst te zien krijgt aan een verwachte snelheid zal er minder aandacht geschonken worden wanneer de rest van diezelfde pagina verschijnt. Waardoor een website veel sneller oogt.
+
+\subsubsection{\IfLanguageName{dutch}{Interactie}{Interaction}}
+\label{sec:interaction}
+
+Interactie is een algemeen begrip en wordt onderverdeeld in verschillende criteria. Met het steeds sneller evolueren van de niche, dat het internet is, worden doelstelling opgelegd die de industrie verwacht behaald te zien. \\ 
+In figuur~\ref{fig:InteractionSpeedTarget} op pagina~\pageref{fig:InteractionSpeedTarget} worden de doelstellingen in verband met interactie aangekaart, bron van deze informatie komt is het artikel van~\textcite{Taub2017}.
+
+\begin{itemize}[label={}]
+    \item \textbf{Time to interact}:
+    Geeft een indicatie weer van de tijd die nodig is vooraleer de gebruiker interactie kan voeren met delen van de website, zoals bv. een input veld selecteren, doorklikken op een link, animaties starten,\dots \newline
+    \item \textbf{Interaction frame rate}:
+    Meeste schermen hebben een refresh snelheid van 60\gls{fps}, wanneer er onder 60 wordt gegaan kan dit snel aanzien worden als \textit{laggy} voor een gebruiker. De oorzaak hiervoor is vaak teveel schrijven/lezen of een verrommeling van het \gls{dom}. \newline
+    \item \textbf{Interaction response time}:
+    Een abstracte maatstaf voor de snelheid waarmee een interactie word waargenomen door de gebruiker. Hoe lager deze waarde ligt, hoe sneller een website zal waargenomen worden.
+\end{itemize}
+
+\begin{figure}[H]
+    \tikz\node [drop shadow={
+        shadow scale=0.98,
+        shadow xshift=0ex,
+        shadow yshift=0ex,
+        opacity=0.1,
+    }]
+    {\fcolorbox{black}{white}{\includegraphics[width=\linewidth]{InteractionSpeedTarget}}};
+    \caption{Verwachte waarden opgelegd door de industrie}
+    \label{fig:InteractionSpeedTarget}
+\end{figure}
+
+\subsubsection{\IfLanguageName{dutch}{Laadproces}{Loading process}}
+\label{sec:loadingProcess}
+
+Wanneer een website wordt geladen worden er een bepaald aantal fasen doorlopen vooraleer de eerste pagina op het scherm tevoorschijn kan komen. In figuur~\ref{fig:browserPageLoadTimeline} op pagina~\pageref{fig:browserPageLoadTimeline} worden de fasen aangetoond op een as doorheen de tijd. Voor deze scriptie ligt de focus op frontend tijd.
+
+\begin{itemize}[label={}]
+    \item \textbf{\gls{dom} processing}:
+    Na het verkrijgen van de \gls{html}, die via requests van de server werd gehaald, wordt deze omgezet naar een \gls{dom}. \newline
+    \item \textbf{Pagina rendering}:
+    Wanneer het \gls{dom} is aangemaakt begint de browser met het renderen van de pagina op basis van het \gls{dom}. In deze fase wordt de inhoud verwerkt en nadien kan de browser het window load event initialiseren.
+\end{itemize}
+
+\begin{figure}[h!]
+    \tikz\node [drop shadow={
+        shadow scale=0.98,
+        shadow xshift=0ex,
+        shadow yshift=0ex,
+        opacity=0.2,
+    }]
+    {\fcolorbox{black}{white}{\includegraphics[width=\linewidth]{BrowserPageLoadTimeline.png}}};
+    \caption{Tijdlijn voor het laden van een pagina, Bron:~\textcite{Relic2016}}
+    \label{fig:browserPageLoadTimeline}
+\end{figure}
+
+\subsection{\IfLanguageName{dutch}{Tools}{Tools}}
+\label{sec:testTools}
+
+Zoals voordien al aangegeven in sectie~\ref{sec:biggestFactor} op pagina~\pageref{sec:biggestFactor} is snelheid alles bepalend en dit is te meten op basis van verschillende metrieken, welke al reeds besproken werden in sectie~\ref{sec:metrics} op pagina~\pageref{sec:metrics}. Voor het daadwerkelijk meten van deze maatstaven zijn er verschillende tools op de markt. Zo zijn er tools voor performantie tests manueel of geautomatiseerd kunnen zijn. Ook de Chrome DevTools bieden een geïntegreerde tool voor het testen van performantie. Hieronder enkele bekende voorbeelden van dergelijke tools: \\
+
+\begin{itemize}[label={}]
+    \item \textbf{MachMetrics}:
+    Een tool die geautomatiseerde testresultaten voor snelheid dagelijks opmaakt en doorstuurt. Het is een best practice om de statistieken van je website op gepaste tijdstippen te analyseren. Het internet en daarbij ook websites zijn in continue verandering. \newline
+    \item \textbf{WebPageTest}:
+    Online platform voor het testen van allround performantie in verschillende browsers op populaire besturingssystemen.  \newline
+    \item \textbf{Lighthouse}:
+    Open-source tool geïntegreerd in Chrome DevTools, maar kan ook als node module of in command line uitgevoerd worden. De tool stelt verschillende audits ter beschikking om de kwaliteit van websites na te gaan. Het genereert rapporten voor de prestaties van uitgevoerde audits.
+\end{itemize}
+
+% INLEIDING (nog aan te passen!)
+React biedt talloze oplossing voor het bevorderen van performantie, om een kijk te krijgen op enkele van de meest courante technieken wordt er in dit hoofdstuk een overzicht opgesteld. Enkele van de oplossingen die worden aangehaald zijn nagebootst binnen een testomgeving, waarna de resultaten worden geanalyseerd. Neem op voorhand aan dat dit niet de enige mogelijkheden zijn voor het optimaliseren van performantie. De voorgestelde technieken zijn onderverdeeld in 3 categorieën: \\
+
+\begin{itemize}[label={}]
+    \item \textbf{Native}:
+    De oplossingen die React ons zelf bied als zijnde deel van de core functionaliteiten \newline
+    \item \textbf{Framework}:
+    Mogelijkheden die we specifiek kunnen toepassen door het gebruik van React  \newline
+    \item \textbf{Tools}:
+    Functionaliteiten afkomstig van een derde partij die we kunnen integreren in de codebase
+\end{itemize}
+
+\section{\IfLanguageName{dutch}{Native}{Native}}
+\label{sec:nativeOplossingen}
+
+Door React in scope te plaatsen is er toegang tot de React top-level \gls{api}. Zoals wordt aangegeven in figuur~\ref{fig:reactImport} op pagina~\pageref{fig:reactImport} is de import het aanspreekpunt voor de \gls{api} en maakt alle React functionaliteiten aanspreekbaar. Zoals wordt aangegeven in figuur~\ref{fig:reactImport} op pagina~\pageref{fig:reactImport}.
+
+\begin{figure}[H]
+    \includegraphics[width=\linewidth]{ReactInScope.png}
+    \caption{React in scope}
+    \label{fig:reactImport}
+\end{figure}
+
+\subsection{\IfLanguageName{dutch}{Gebruiken van de Fragment tag}{Usage of the Fragment tag}}
+\label{sec:fragmentsPraktisch}
+
+Een probleem dat vaak voorkomt wanneer het gaat om performantie is het lezen en schrijven naar het \gls{dom}. \gls{dom} manipulaties zijn op zich zeer belastend en vragen veel \gls{cpu}-tijd. Als het \gls{dom} vol wordt gestoken met nestingen van nodes ontstaat er vanzelfsprekend vertraging.\\
+In sectie~\ref{sec:fragments} op pagina~\pageref{sec:fragments} werd uitgelegd hoe React fragments het \gls{dom} vrijhouden van een overrompeling aan nutteloze tags, waaronder vooral <div> tags.
+
+\subsection{\IfLanguageName{dutch}{Extenden van React.PureComponent}{Extend of React.PureComponent}}
+\label{sec:pureComponent}
+
+Pure component is exact hetzelfde als een gewoon component in React. Het verschil tussen beiden ligt bij het aanroepen van de lifecycle methode shouldComponentUpdate(), die op een andere manier uitgevoerd wordt. Bij een normaal component zal er altijd een re-render uitgevoerd worden wanneer er iets aan props of state veranderd. In een pure component wordt er in de shouldComponentUpdate functie aan shallow comparison gedaan van props en state.\\
+Bij shallow comparison worden de waarden en referenties van de vorige props en state vergeleken met de volgende. Deze controle is goedkoop, zeker in vergelijking met het telkens re-renderen van een component. Het nadeel is dat er geen controle wordt gedaan voor de waarden in geneste objecten. \\
+Het omzetten gaat ervoor zorgen dat er minder re-renders gebeuren. Dit wordt ook overgedragen naar de kinderen van een pure component, daardoor is het af te raden voor componenten met kinderen, tenzij al deze ook pure components worden.\\
+Het is een best practice om een gewoon klasse component om te zetten wanneer het eenvoudige state en props bevat. Het gebruik van een pure component geeft een performantie boost zonder dat er veel aanpassingen moeten worden gedaan aan de initiële code.\\
+Figuur~\ref{fig:extendPureComponent} op pagina~\pageref{fig:extendPureComponent} geeft aan waar de aanpassing plaats vindt.
+
+\begin{figure}[H]
+    \includegraphics[width=\linewidth]{ExtendPureComponent.png}
+    \caption{Veranderen van component naar pure component}
+    \label{fig:extendPureComponent}
+\end{figure}
+
+
+\subsection{\IfLanguageName{dutch}{Wikkelen in React.Memo}{Wrap in React.Memo}}
+\label{sec:memo}
+
+Memoization is een techniek voor het optimaliseren van snelheid in computer programma's. Door de dure functies, die regelmatig worden uitgevoerd, op te slaan in het cache geheugen kunnen ze veel sneller uitgevoerd worden in de toekomst. React memo werkt volgens hetzelfde principe.\\
+React Memo is gelijkaardig aan het extenden van een pure component, het geeft controle over het renderen van functionele componenten. Als een functioneel component wordt gewikkeld in React.memo() worden bij elke re-render enkel de \gls{ui}-elementen opnieuw gerenderd die geüpdatet props nodig hebben.
+
+\subsection{\IfLanguageName{dutch}{React lazy}{React lazy}}
+\label{sec:lazy}
+
+Het integreren van code-splitting helpt voor het lazy loaden van componenten. Alles tegelijk in één keer downloaden voor het inladen van de pagina is niet optimaal. \gls{ui} elementen worden ingeladen zonder dat er ooit interactie is met de gebruiker. Tijdens lazy loading wordt gewacht om code in te laden tot wanneer het wel degelijk nodig is.\\
+Figuur~\ref{fig:lazyLoading} op pagina~\pageref{fig:lazyLoading} toont een voorbeeld voor het lazy loaden van een component.
+
+\begin{lstlisting}[caption=Lazy loading a component, label={fig:lazyLoading}]
+    Here comes a code snippet
+\end{lstlisting}
+
+% \subsubsection{\IfLanguageName{dutch}{Suspense}{Suspense}}
+%\label{sec:suspens}
+
+%Suspense is een concept dat werd geïntroduceerd met de komst van React lazy in React versie 16.6. Het bied een fallback functie voor componenten die lazy loaded zijn. Tijdens het dynamisch inladen %van een component kan er een laad tijd ontstaan afhankelijk van de document grootte. Figuur~\ref{fig:suspenseLazy} op pagina~\pageref{fig:suspenseLazy} geeft aan hoe die laadtijd wordt opgevangen %met suspense.\\
+
+%\newpage
+%\begin{lstlisting}[caption=Lazy loading met suspense, label={fig:suspenseLazy}]
+%    Here comes a code snippet
+%\end{lstlisting}
+
+\section{\IfLanguageName{dutch}{Framework}{Framework}}
+\label{sec:frameworkOplossingen}
+
+\subsection{\IfLanguageName{dutch}{Propagatie}{Propagation}}
+\label{sec:propagatie}
+
+Bij propagatie geven we properties mee aan een component, om het een bepaalde vorm te geven aan het deel van de \gls{ui} die geretourneerd wordt. In praktijk is het mogelijk om alle props die een ouder bezit door te geven aan zijn kinderen door alle props te spreaden in de component tag. Sectie~\ref{sec:spreadOperator} op pagina~\pageref{sec:spreadOperator} geeft aan hoe de spread operator functioneert en hoe props worden gespread in een component.\\
+Het spreaden van het volledige prop object in de component tag is niet altijd een best practice. Wanneer het props object exact de gewenste waarden bevat om door te geven aan een volgend component is er geen probleem. Als er geen zekerheid is over de inhoud van het props object is het een bad practice om deze te spreaden. Door het doorsturen van een inhoudelijk onbekend props object is er grote kans dat we het \gls{dom} vervuilen door properties zonder afhankelijkheid toe te kennen aan componenten.
+
+\subsection{\IfLanguageName{dutch}{Function calls in de render functie}{Function calls in the render function}}
+\label{sec:functionCalls}
+
+Figuur~\ref{fig:funcCalls} op pagina~\pageref{fig:funcCalls} toont twee voorbeelden voor het uitvoeren van een functie binnen in de render functie van een component. Het eerste voorbeeld zal telkens een nieuwe referentie aanmaken voor de functie wanneer hij opnieuw gerenderd wordt. Constant nieuwe referenties aanmaken is een bad practice in het performance handboek.\\
+Voor het tegengaan van het steeds opnieuw aanmaken van een referentie maken we een arrow functie aan buiten de render. Wanneer de functie nu wordt aangeroepen wordt de referentie naar de arrow functie bewaard.
+
+\newpage
+\begin{lstlisting}[caption=Lazy loading met suspense, label={fig:funcCalls}]
+    Here comes a code snippet
+\end{lstlisting}

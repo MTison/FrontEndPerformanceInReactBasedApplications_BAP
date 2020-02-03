@@ -23,8 +23,53 @@
 %\end{itemize}
 
 %=======================================================================
-% React API hoofdstuk
+% KLAD
 %=======================================================================
+
+\section{\IfLanguageName{dutch}{Javascript}{Javascript}}
+\label{sec:javascript}
+
+De taal werd gecreëerd door Brendan Eich in 1995 in zijn tijd als werknemer bij Netspace Communications, zoals aangegeven in het artikel van ~\textcite{Aston2015}. In 1997 werd het een \gls{ecma} standaard en nu behoort het tot één van de meest gebruikte programmeertalen voor het web. Zoals de naam al vrijgeeft behoort javaScript tot de scripttalen, elke scripttaal is een programmeertaal in zijn eigen recht. Voorbeelden zijn: Node js, bash, Ruby, Perl, Python, \dots\\
+Scripttalen worden veel gebruikt omdat ze eenvoudig, flexibel en gebruiksvriendelijk zijn. Het zijn talen geschreven voor een run-time omgeving en worden samen met de executie van de applicatie uitgevoerd. Ze moeten niet gecompileerd worden door een compiler.\\
+JavaScript wordt veel gebruikt als client side programmeertaal. Alle geschreven javaScript documenten worden bij het navigeren naar een webpagina samen met alle \gls{html} en \gls{css} documenten opgehaald van de server. Alle geïmporteerde documenten worden daarna door de browser geïnterpreteerd aan de kant van de gebruiker.
+
+\subsection{\IfLanguageName{dutch}{JavaScript-framework}{JavaScript-framework}}
+\label{sec:jsFrameworks}
+
+Frameworks bezorgen de programmeur een duidelijke structuur en gestandaardiseerde code. Telkens opnieuw code moeten opbouwen en schrijven rooft tijd en productiviteit. Afhankelijk op welk niveau de programmeertaal wordt gebruikt bestaan er 2 typen frameworks, frontend en backend.\\
+Door de immense opkom van webapplicaties begin jaren 2000 werd de vraag naar javaScript en \gls{ajax} enorm groot. Het vraag overschot zorgde voor de onvermijdelijke behoefte aan javaScript-frameworks. De frameworks brengen een oplossing voor de problemen die zuivere javaScript vormt:
+
+\begin{itemize}[label={}]
+    \item \textbf{Browserafhankelijkheid}:
+    JavaScript zelf is niet afhankelijk van de browser, maar er worden wel \gls{dom} manipulaties gedaan via javaScript. De \gls{dom} is wel afhankelijk van de browser. Er moet op basis van de browser extra code voorzien worden. \newline
+    \item \textbf{Prototype programmeren}:
+    Maakt geen gebruik van klassen. Er wordt een prototype gemaakt van een object dat kan dienen voor overerving, het heeft limieten. \newline
+    \item \textbf{Geen code herbruikbaarheid}:
+    De code kan niet op een functionele manier worden gebundeld voor hergebruik, wat noodzakelijk is wanneer de complexiteit toeneemt.
+\end{itemize}
+
+Voorbeelden van \gls{js}-frameworks zijn ReactJS, AngularJS, vue.js, Ember.js, \dots
+
+\subsection{\IfLanguageName{dutch}{Javascript library}{Javascript library}}
+\label{sec:jsLibrary}
+
+Libraries zijn een geheel van voorgeprogrammeerde functies die kunnen gebruikt worden om een aanvulling te bieden tot de reeds beschikbare functionaliteiten die het framework in kwestie aanbied. Het aspect dat ze een aanvulling bieden maakt het development eenvoudiger en makkelijker uit te breiden. In deze tijd is het simpel om een library te gebruiken met een installatie via de package manager, daarna enkel nog een import om deze in scope te plaatsen. In figuur~\ref{fig:libraryImport} op pagina~\pageref{fig:libraryImport} wordt de \textit{styled} library geïmporteerd voor het stylen van \gls{html} elementen.\\
+Sommige libraries worden aanzien als een eigen framework omdat zij full-stack capaciteiten hebben, wat wil zeggen dat ze zowel frontend als backend functionaliteiten voorzien.\\
+ReactJS is één van zo'n frameworks. Meningen verschillen over de interpretatie, maar beide kunnen geaccepteerd worden met elk juiste gegronde argumenten. Mensen uit de branche zoals Tom Dale, Senior Staff Software Engineer bij LinkedIn en co-creator van Ember.js, verwijzen naar React als een framework waar en tegen de online documentatie van React het als een library omschrijft.
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{ReactInScope.png}
+    \caption{Importeren van een library}
+    \label{fig:libraryImport}
+\end{figure}
+
+\section{\IfLanguageName{dutch}{Onderzoeksvraag}{Research question}}
+\label{sec:onderzoeksvraag}
+
+De kernvraag van deze scriptie: Hoe performantie op frontend niveau op een doelgerichte en innovatieve manier verbeteren in React web applicaties?\\
+Performantie is een gegeven dat in de loop der jaren in de software wereld enorm op de voorgrond is gekomen. Met hoe snel technologie en software zich ontwikkeld is het moeilijk voor iedere software ontwikkelaar om bij te houden wat de best practices zijn op het gebied van performantie. In deze `modern age` is het vanzelfsprekend dat webpagina's en apps binnen de twee seconden reageren op interactie van de gebruiker. Uit het artikel van~\textcite{Mazaika2017} leiden we af dat de vraag naar developers en software bedrijven enorm toeneemt. Dit ten gevolge van de exponentiële groei in de vraag naar webapplicaties, mobiele applicaties en andere software. Elke dag worden zij op de proef gesteld om aan de noden van gebruikers te voldoen. Met de druk van steeds meer uitgebreide en evenement rijke gebruikersomgevingen is het noodzakelijk om stil te staan bij performantie.\\
+Hoe meten we performantie? Welke oplossingen biedt React ons? Waar hangt performantie van af in webapplicaties? Wat zijn de veel voorkomende valkuilen? Bestaan er ondersteunende software? Welke innovatieve technieken kunnen we toepassen? Kunnen we een leidraad vormen voor frontend performantie binnen React web applicaties?
+
 
 \section{\IfLanguageName{dutch}{React API}{React API}}
 \label{sec:reactComponenten}
